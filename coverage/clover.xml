@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1537721129598" clover="3.2.0">
+  <project timestamp="1537721129598" name="All files">
+    <metrics statements="47" coveredstatements="47" conditionals="7" coveredconditionals="7" methods="14" coveredmethods="14" elements="68" coveredelements="68" complexity="0" loc="47" ncloc="47" packages="2" files="2" classes="2">
+      <package name="services">
+        <metrics statements="40" coveredstatements="40" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
+        <file name="payment-plan-calculator.js" path="/Users/filippov/Projects/loan-calculator/src/services/payment-plan-calculator.js">
+          <metrics statements="40" coveredstatements="40" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="17" count="10" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+          <line num="21" count="3" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
+          <line num="23" count="3" type="stmt"/>
+          <line num="25" count="3" type="stmt"/>
+          <line num="26" count="9" type="stmt"/>
+          <line num="28" count="9" type="cond" truecount="2" falsecount="0"/>
+          <line num="29" count="6" type="stmt"/>
+          <line num="30" count="6" type="stmt"/>
+          <line num="33" count="9" type="stmt"/>
+          <line num="35" count="9" type="cond" truecount="2" falsecount="0"/>
+          <line num="36" count="3" type="stmt"/>
+          <line num="37" count="3" type="stmt"/>
+          <line num="40" count="9" type="stmt"/>
+          <line num="43" count="3" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="48" count="2" type="stmt"/>
+          <line num="49" count="2" type="stmt"/>
+          <line num="50" count="5" type="stmt"/>
+          <line num="51" count="5" type="stmt"/>
+          <line num="52" count="5" type="stmt"/>
+          <line num="55" count="2" type="stmt"/>
+          <line num="59" count="1" type="stmt"/>
+          <line num="60" count="2" type="stmt"/>
+          <line num="61" count="5" type="stmt"/>
+          <line num="69" count="1" type="stmt"/>
+          <line num="70" count="1" type="stmt"/>
+          <line num="71" count="1" type="stmt"/>
+          <line num="72" count="1" type="stmt"/>
+          <line num="74" count="1" type="stmt"/>
+          <line num="77" count="1" type="stmt"/>
+          <line num="78" count="1" type="stmt"/>
+          <line num="79" count="3" type="stmt"/>
+          <line num="82" count="1" type="stmt"/>
+        </file>
+      </package>
+      <package name="utils">
+        <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <file name="utils.js" path="/Users/filippov/Projects/loan-calculator/src/utils/utils.js">
+          <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="3" type="stmt"/>
+          <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
+          <line num="6" count="4" type="stmt"/>
+          <line num="7" count="4" type="stmt"/>
+          <line num="8" count="14" type="stmt"/>
+          <line num="10" count="4" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for services/payment-plan-calculator.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">services</a> payment-plan-calculator.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>41/41</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>12/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>40/40</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { roundUp, generateArray } from '../utils/utils';
+&nbsp;
+// (Number -&gt; Number -&gt; Number) -&gt; Number
+export const calculateFee = (amount, feeMultiplier, maxMonthlyFee) =&gt; {
+  let monthlyFee = amount * feeMultiplier;
+  return monthlyFee &gt; maxMonthlyFee ? maxMonthlyFee : monthlyFee;
+};
+&nbsp;
+/**
+ * It is a financial function PMT
+ * (Number -&gt; Number -&gt; Number) -&gt; Number
+ */
+export const calculateMonthlyPayment = (amount, interest, loanTerm) =&gt;
+  interest / 12 * amount / (1 - Math.pow(1 + (interest / 12), -loanTerm));
+&nbsp;
+// (Nuber -&gt; Number) -&gt; Number
+export const calculateDailyInterest = (amount, interest) =&gt; amount * interest / 365;
+&nbsp;
+// Object -&gt; Array
+export const calculatePaymentsInformation = ({ amount, monthlyInstallment, interest, monthlyFeeToPay, loanTerm }) =&gt; {
+  const fractionDigits = 2;
+  const month = 30;
+  const monthlyPayments = generateArray(loanTerm);
+&nbsp;
+  monthlyPayments.reduce((accumulator, currentValue, currentIndex) =&gt; {
+    Object.assign(currentValue, accumulator);
+&nbsp;
+    if (currentIndex !== 0) {
+      const needsToPay = accumulator.amount - (accumulator.monthlyInstallment - accumulator.dailyInterest - monthlyFeeToPay);
+      currentValue.amount = Number(needsToPay.toFixed(fractionDigits));
+    }
+&nbsp;
+    currentValue.dailyInterest = calculateDailyInterest(currentValue.amount, interest) * month;
+&nbsp;
+    if (currentIndex === monthlyPayments.length - 1) {
+      const newMonthlyInstallment = currentValue.amount + currentValue.dailyInterest + monthlyFeeToPay;
+      currentValue.monthlyInstallment = Number(newMonthlyInstallment.toFixed(fractionDigits));
+    }
+&nbsp;
+    return currentValue;
+  }, { amount, monthlyInstallment });
+&nbsp;
+  return monthlyPayments;
+};
+&nbsp;
+// Array -&gt; Array
+export const calculateCapitalLeft = paymentsInformation =&gt; {
+  const capitalInformation = [];
+  paymentsInformation.reduce((accumulator, currentValue) =&gt; {
+    const capitalLeft = accumulator + currentValue.monthlyInstallment;
+    capitalInformation.push(capitalLeft);
+    return capitalLeft;
+  }, 0);
+&nbsp;
+  return capitalInformation;
+}
+&nbsp;
+// Array -&gt; Number
+export const calculateTotalPrice = paymentsInformation =&gt; {
+  return paymentsInformation.reduce((accumulator, currentValue) =&gt; {
+    return accumulator + currentValue.monthlyInstallment;
+  }, 0);
+};
+&nbsp;
+/**
+ * This is a main function which helps us to calculate all financial information about payments.
+ * Object -&gt; Number -&gt; Object
+ */
+export default ({ feeMultiplier, maxMonthlyFee, interest, loanTerm }) =&gt; amount =&gt; {
+  const fractionDigits = 2;
+  const monthlyFeeToPay = calculateFee(amount, feeMultiplier, maxMonthlyFee);
+  const monthlyInstallment = roundUp(calculateMonthlyPayment(amount, interest * 360 / 365, loanTerm), fractionDigits)
+    + monthlyFeeToPay;
+  const paymentsInformation = calculatePaymentsInformation(
+    { amount, monthlyInstallment, interest, monthlyFeeToPay, loanTerm }
+  );
+  const monthlyCapitalLeft = calculateCapitalLeft(paymentsInformation);
+  paymentsInformation.forEach((information, index) =&gt; {
+    information.capitalLeft = monthlyCapitalLeft[index];
+  });
+&nbsp;
+  return {
+    loanTerm,
+    monthlyInstallment: monthlyInstallment,
+    monthlyFeeToPay,
+    paymentsInformation,
+    totalPrice: calculateTotalPrice(paymentsInformation)
+  };
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Sep 23 2018 18:45:29 GMT+0200 (CEST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

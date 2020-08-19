@@ -1,0 +1,51 @@
+{
+  "paymentPlans": [
+    {
+      "loanTerm": 3,
+      "feeMultiplier": 0.05,
+      "maxMonthlyFee": 91.5,
+      "interest": 0.06
+    },
+    {
+      "loanTerm": 6,
+      "feeMultiplier": 0.03,
+      "maxMonthlyFee": 43.5,
+      "interest": 0.06
+    },
+    {
+      "loanTerm": 12,
+      "feeMultiplier": 0.0222,
+      "maxMonthlyFee": 19.5,
+      "interest": 0.06
+    },
+    {
+      "loanTerm": 24,
+      "feeMultiplier": 0.015,
+      "maxMonthlyFee": 7.47,
+      "interest": 0.06
+    },
+    {
+      "loanTerm": 60,
+      "feeMultiplier": 0.01,
+      "maxMonthlyFee": 37,
+      "interest": 0.06
+    }
+  ],
+  "exceptions": {
+    "amountForLongPaymentPlan": 2000,
+    "smallestInstallment": 5
+  },
+  "availableLoans" : [
+    100,
+    200,
+    300,
+    400,
+    500,
+    1000,
+    1500,
+    2000,
+    3000,
+    4000,
+    5000
+  ]
+}
